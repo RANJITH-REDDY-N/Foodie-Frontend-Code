@@ -1,0 +1,167 @@
+.form-control.ng-touched.ng-invalid {
+    border: 0;
+    outline: 0;
+    /* background: transparent; */
+    border-bottom: 1px solid rgb(255, 0, 0);
+    border-radius: 0;
+}
+.form-control.ng-touched.ng-valid {
+    border: 0;
+    outline: 0;
+    /* background: transparent; */
+    border-bottom: 1px solid green;
+    border-radius: 0;
+}
+form{
+    margin-left:15vw;
+    padding: 2vw;
+    max-width: 50vw;
+    min-width: auto;
+    color: whitesmoke;
+    background: rgba(149, 149, 149, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+}
+.carddisplay{
+    width: 100%; 
+    box-sizing: border-box;
+    position: relative;
+    background-size: cover;
+    background-position: center top 26%;
+    min-height:90vh;
+    color: rgb(255, 255, 255);
+    background-image: url("../../assets/a3-min.jpg");
+    background-color: #212121;
+}
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    color: whitesmoke;
+}
+.brand{
+        font: 45px 'Cookie', cursive;
+}
+.navbar{
+    margin:0;
+    padding:0;
+}
+/* Register BUTTON */
+.regbtn{
+
+    padding: 10px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+   }
+   
+   .regbtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .regbtn:hover {
+    color: #e8e8e8;
+   }
+   
+   .regbtn:hover::before {
+    width: 100%;
+   }
+
+   
+   /* SignUp Button*/
+   .cta {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px 10px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #4376a8;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #487db2;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+    cursor: pointer;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+    cursor: pointer;
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+   .clrbtn{
+       margin-left:10px;
+       padding: auto;
+    border-radius: 50px;
+   }
+
+h1{
+    margin-left: 27%;
+    padding: 10% 0% 1% 0%; 
+    font-size: 50px; 
+    font-family: Telex;
+    color: rgba(255, 255, 255, 0.944);
+} 
+

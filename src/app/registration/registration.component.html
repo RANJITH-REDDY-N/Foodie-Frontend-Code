@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <nav class="navbar navbar-expand-md bg-light navbar-light ">
+    <div class="container">
+      <a [routerLink]="['']" class="navbar-brand">
+        <span class="brand" style="color: #33383b;">G<span style="color: #e0ac1c; font-size:x-large;">rill</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navmenu">
+        <button routerLink="/login" class="btn btn-outline-dark loginbtn ms-auto mb-2">Login</button>
+      </div>
+    </div>
+  </nav>
+<section class="carddisplay">
+  <section id="reg_form">
+    <h1>Registration</h1>
+    <form [formGroup]="registrationform">
+      <div class="form-group">
+        <label for="username" class="col-form-label">Name</label>
+        <input formControlName="username" type="text" [(ngModel)]="UserObj.username" class="form-control" required autocomplete="off" name="username" >
+      </div><div class="form-group">
+        <label class="col-form-label">Email</label>
+        <input formControlName="email" type="email" [(ngModel)]="UserObj.email" class="form-control" required autocomplete="off" name="email" >
+      </div>
+      <div class="form-group">
+        <label for="phone" class="col-form-label">Mobile</label>
+        <input formControlName="phone" type="text" [(ngModel)]="UserObj.phone" class="form-control" required autocomplete="off" name="phone" >
+      </div>
+      <div class="form-group">
+        <label for="password" class="col-form-label">Password</label>
+        <input formControlName="password" type="password" [(ngModel)]="UserObj.password" class="form-control" required autocomplete="off" name="password">
+      </div>
+      <div>
+        <label for="image" class="col-form-label">Photo<sup><small style="font-size: 7px;">(optional)</small></sup></label>
+        <input type="file" class="form-control" name="image">
+      </div>
+      <button (click)="postUserRecord(registrationform.value)" type="button" class="cta">
+        <span>Sign Up</span>
+          <svg width="15px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+      </button>
+      <button type="reset" class="btn btn-outline-light  ms-4 clrbtn" id="clr">Clear</button>
+    </form>
+  </section>
+
+</section>
+</html>
+<router-outlet></router-outlet>

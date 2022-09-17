@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+      <nav class="navbar navbar-expand-md bg-light navbar-light ">
+        <div class="container">
+          <a [routerLink]="['']" class="navbar-brand">
+            <span class="brand" style="color: #33383b;">G<span style="color: #e0ac1c; font-size:x-large;">rill</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mb-2" id="navmenu">
+            <button routerLink="/registration" class="btn btn-outline-dark bothbtn ms-auto">Register</button>
+            <button routerLink="/login" class="btn btn-dark ms-2 bothbtn">Login</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel  Unit Starts here-->
+  <section class="banner" >
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+          <div class="card border-0 shadow">
+                <img src="../../assets/Compressed/pizza-min.jpg" alt="" class="card-img-top mouse">
+                <div class="card-body">
+                    <div class="card-title text-center">
+                        <h4>Pizza</h4>
+                        <h2 class="price">₹ 300/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+      </ng-template>  
+      <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/sandwich-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Sandwich</h4>
+                      <h2 class="price">₹ 255/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/Burritos-min.jpeg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Burritos</h4>
+                      <h2 class="price">₹ 210/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/pancakes-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Pancakes</h4>
+                      <h2 class="price">₹ 125/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/chicken-skewers-chili-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Chicken Skewers <small style="font-size:xx-small; color: red;">Spicy🔥</small></h4>
+                      <h2 class="price"><sup style="font-size: x-small;">₹<s> 450</s>/-</sup>₹ 225/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/broccoli-mushrooms-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Broccoli Mushroom Salad</h4>
+                      <h2 class="price">₹ 175/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/casserole-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Casserole</h4>
+                      <h2 class="price">₹ 125/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/pasta-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Pasta</h4>
+                      <h2 class="price">₹ 99/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/chicken-skewers-peppers-dill-min.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Chicken Skewers</h4>
+                      <h2 class="price">₹ 350/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="card border-0 shadow">
+              <img src="../../assets/Compressed/vegetables-grilled-pan-min.jpg" alt="" class="card-img-top mouse">
+              <div class="card-body">
+                  <div class="card-title text-center">
+                      <h4>Grilled Veggie Salad</h4>
+                      <h2 class="price">₹ 110/-</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                  </div>
+              </div>
+          </div>
+    </ng-template>
+    
+    </owl-carousel-o>
+</section>
+
+    <!--Carousel Unit Ends Here  -->
+
+    <!-- PAgination Starts here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+  <div class="cards1">
+    <div class="container1" *ngFor="let restaurant of lists | paginate:{itemsPerPage:3,currentPage:q}">
+      <img class="imageclass" src="{{restaurant.restaurant.thumb}}" alt="...">
+      <div class="content-box1">
+        <h4 class="name">{{restaurant.restaurant.name}}</h4>
+      
+      <div class="btn1">
+        <button class="favbtn" (click)="redirect()">Favourite ❤</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="paginationdiv">
+    <span>
+      <pagination-controls (pageChange)="q=$event"></pagination-controls>
+    </span>
+  </div>
+</body>
+</html>
+<router-outlet></router-outlet>

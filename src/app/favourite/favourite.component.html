@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+    <nav class="navbar navbar-expand-md bg-light navbar-light ">
+        <div class="container">
+          <a [routerLink]="['/dashboard']" class="navbar-brand">
+            <span class="brand" style="color: #33383b;">G<span style="color: #e0ac1c; font-size:x-large;">rill</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mb-2" id="navmenu">
+            <button (click)="logout()" class="btn btn-dark ms-auto me-4 bothbtn">Logout</button>
+          </div>
+        </div>
+      </nav>
+
+<section class="carddisplay">
+  <div class="header">
+    <h1><i>Favourites</i>🍔</h1>
+  </div>
+  <div class="cards">
+  <div class="container1" *ngFor="let favourites of favList">
+    <container-element [ngSwitch]="favourites.restaurantId">
+      <!-- the same view can be shown in more than one case -->
+      <div *ngSwitchCase="18693560">
+        <img class="imageclass" src="../../assets/Restaurants/KFC.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18814053">
+        <img class="imageclass" src="../../assets/Restaurants/LeArabia.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18694178">
+        <img class="imageclass" src="../../assets/Restaurants/BunCafe.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18693975">
+        <img class="imageclass" src="../../assets/Restaurants/SupremeBakers.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18690683">
+        <img class="imageclass" src="../../assets/Restaurants/budgetRes.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18693847">
+        <img class="imageclass" src="../../assets/Restaurants/Mothers_Square_Image.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18707014">
+        <img class="imageclass" src="../../assets/Restaurants/Paragon.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18896956">
+        <img class="imageclass" src="../../assets/Restaurants/SNS.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18694161">
+        <img class="imageclass" src="../../assets/Restaurants/YMR.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+      <div *ngSwitchCase="18687966">
+        <img class="imageclass" src="../../assets/Restaurants/palayam.png" alt="...">
+        <div class="content-box">
+          <div class="title">Res_Id   : {{favourites.restaurantId}}</div>
+          <div class="title">Res_Name : {{favourites.restaurantName}}</div>
+          <div class="removebtn-div">
+            <button class="removebtn" (click)="deleteFavourites(favourites.restaurantId)">Remove</button>
+          </div>
+        </div> 
+      </div>
+    </container-element>
+    
+  </div>
+</div>
+</section>
+</html>
